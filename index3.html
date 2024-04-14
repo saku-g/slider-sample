@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css" />
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+  </head>
+  <body>
+    <div class="sec">
+      <div class="inner">
+        <div class="body">
+          <div class="left">
+            <div class="ttl">
+              <h2>Test</h2>
+              <p>テスト</p>
+            </div>
+          </div>
+          <div class="right">
+            <ul class="slider">
+              <li><div>1</div></li>
+              <li><div>2</div></li>
+              <li><div>3</div></li>
+              <li><div>4</div></li>
+              <li><div>5</div></li>
+              <li><div>6</div></li>
+              <li><div>7</div></li>
+              <li><div>8</div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <!-- slickのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('.slider').slick({
+          arrows: true,
+          dots: true,
+          rows: 2,
+          slidesPerRow: 2,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                rows: 4,
+                slidesPerRow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
